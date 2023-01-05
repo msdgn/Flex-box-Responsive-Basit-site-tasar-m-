@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+body{
+    color: bisque;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.banner{
+   width: 100%;  /*yüzdelik verirsek siteyi response yapar */
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.banner h2{
+    color: white;
+}
+.menu{
+    background-color: brown;
+    height: 80px;
+    width: 80%;
+    margin-bottom: 5px;
+    /*margin: 0 auto;     ortalar lakin bu div için */
+   
+}
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+   flex-wrap: wrap;   /*  bu özellik ile sayfa yandan küçüldüğünde aşağıya şişme olacak sıkıştırma olmaz*/
+}
+.menu ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    
+
+}
+.icerik{
+    display: flex;
+    width: 80%;
+    height: auto;
+}
+.icerik .makale{
+    width: 80%; 
+    /* height: 500px; */
+    background-color: teal;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.icerik .makale p{
+    text-align: justify;
+    margin: 10px 0px;
+    text-indent: 15px;
+}
+.icerik .yan-yana{
+    display: flex;
+
+}
+.icerik .yan-yana p{
+    margin-right: 30px;
+}
+
+.icerik .reklam{
+    background-color: red;
+    width:20% ; 
+    display: flex;
+    flex-direction: column;
+    /* height: 500px; */
+    justify-content: space-between;
+
+}
+
+.reklam img{
+    height: 150 px;
+   
+}
+.footer{
+width: 80%;  /*yüzdelik verirsek siteyi response yapar */
+background-color: black;
+height: 50px;
+margin-top: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.footer p{
+    color: white;
+    font-size: 20px;
+}
